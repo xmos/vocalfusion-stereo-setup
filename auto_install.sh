@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-SCRIPTS_DIR="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"/scripts
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+pushd . > /dev/null
+cd $SCRIPT_DIR
 
-if [ -e /usr/share/alsa/pulse-alsa.conf ] ; then
-    # Back up existing files
-    sudo mv /usr/share/alsa/pulse-alsa.conf  /usr/share/alsa/pulse-alsa.conf.bak
-    sudo mv ~/.config/lxpanel/LXDE-pi/panels/panel ~/.config/lxpanel/LXDE-pi/panels/panel.bak
-fi
+git clone git://github.com/xmos/vocalfusion-rpi-setup.git
 
-$SCRIPTS_DIR/i2s_i2c_setup.sh
+# Execute (rather than source) the setup scripts
+$SCRIPT_DIR/vocalfusion-rpi-setup/setup.sh
 
-echo To enable the i2s device, this pi must now be rebooted
-echo type 'sudo reboot' below to do this
+echo "Type 'sudo reboot' below to reboot the Raspberry Pi and complete the audio setup."
+
+popd > /dev/null

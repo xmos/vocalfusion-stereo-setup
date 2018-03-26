@@ -26,7 +26,7 @@ Full instructions on configuring the Raspberry Pi to use the **xCORE VocalFusion
 
 Brief instructions and additional notes are below:
 
-1. Install **Raspbian Stretch** on the Raspberry Pi. **Note:** This setup script is incompatiable with earlier versions of Raspbian.
+1. Install **Raspbian Stretch** on the Raspberry Pi. **Note:** This setup script is incompatible with earlier versions of Raspbian.
 
 2. Open a terminal on the Raspberry Pi and clone this respository:  
 `cd ~; git clone https://github.com/xmos/vocalfusion-stereo-setup`
