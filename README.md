@@ -1,5 +1,9 @@
 # xCORE VocalFusion Stereo Dev Kit on a Raspberry Pi
 
+:warning: This repository has been archived and will no longer be actively maintained. To evaluate **xCORE VocalFusion** using the Amazon Alexa Voice Services SDK, please refer to the following repositories:
+- [xCORE VocalFusion 4-Mic Kit for AVS and Amazon Alexa Voice Services SDK on a Raspberry Pi](https://github.com/xmos/vocalfusion-avs-setup)
+- [xCORE VocalFusion Stereo 4-Mic Kit for AVS and Amazon Alexa Voice Services SDK on a Raspberry Pi](https://github.com/xmos/vocalfusion-stereo-avs-setup)
+
 The XMOS **xCORE VocalFusion Stereo Dev Kit** provides far-field voice capture using the XMOS XVF3500 voice processor.
 
 Combined with a Raspberry Pi, this kit allows you to quickly prototype and evaluate VocalFusion Stereo.
